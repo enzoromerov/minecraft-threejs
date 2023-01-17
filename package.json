@@ -1,7 +1,7 @@
 {
-  "name": "minecraft-clone",
+  "name": "minecraft-threejs",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -29,5 +29,17 @@
     "extends": [
       "./node_modules/standard/eslintrc.json"
     ]
-  }
+  },
+  "description": "Clon de [Minecraft](https://minecraft.net/) hecho con",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzoromerov/minecraft-threejs.git"
+  },
+  "author": "Enzo Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzoromerov/minecraft-threejs/issues"
+  },
+  "homepage": "https://github.com/enzoromerov/minecraft-threejs#readme"
 }
