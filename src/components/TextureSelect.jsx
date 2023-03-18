@@ -12,7 +12,8 @@ export const TextureSelector = () => {
     grass,
     glass,
     wood,
-    log
+    log,
+    lava
   } = useKeyboard()
 
   useEffect(() => {
@@ -33,7 +34,8 @@ export const TextureSelector = () => {
       grass,
       glass,
       wood,
-      log
+      log,
+      lava
     }
 
     const selectedTexture = Object
@@ -44,7 +46,7 @@ export const TextureSelector = () => {
       const [textureName] = selectedTexture
       setTexture(textureName)
     }
-  }, [dirt, grass, glass, wood, log])
+  }, [dirt, grass, glass, wood, log, lava])
 
   return (
     <div className='texture-selector'>

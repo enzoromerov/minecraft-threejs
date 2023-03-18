@@ -10,7 +10,7 @@ export function Ground () {
 
   const [addCube] = useStore(state => [state.addCube])
 
-  groundTexture.repeat.set(100, 100)
+  groundTexture.repeat.set(33,33)
 
   const handleClickGround = event => {
     event.stopPropagation()

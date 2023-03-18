@@ -3,7 +3,8 @@ import {
   dirtImg,
   logImg,
   glassImg,
-  woodImg
+  woodImg,
+  lavaImg,
 } from './images.js'
 
 import { NearestFilter, RepeatWrapping, TextureLoader } from 'three'
@@ -13,7 +14,7 @@ const dirtTexture = new TextureLoader().load(dirtImg)
 const logTexture = new TextureLoader().load(logImg)
 const glassTexture = new TextureLoader().load(glassImg)
 const woodTexture = new TextureLoader().load(woodImg)
-
+const lavaTexture = new TextureLoader().load(lavaImg)
 const groundTexture = new TextureLoader().load(grassImg)
 
 groundTexture.wrapS = RepeatWrapping
@@ -32,5 +33,6 @@ export {
   dirtTexture,
   logTexture,
   glassTexture,
-  woodTexture
+  woodTexture,
+  lavaTexture
 }
