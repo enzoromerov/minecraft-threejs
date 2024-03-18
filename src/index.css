@@ -1,120 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
+body {
   margin: 0;
-  box-sizing: border-box;
-  padding: 0;
-}
-
-html,
-body,
-.layoutContainer {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background: rgb(78,1,179);
+  background: radial-gradient(circle, rgba(78,1,179,1) 0%, rgba(236,86,192,1) 50%, rgba(251,146,70,1) 98%);
   display: flex;
-  flex-flow: column wrap;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: stretch;
   justify-content: flex-end;
-  align-items: flex-end;
-  row-gap: none;
-  width: 100%;
-  background-color: #1d4e6b;
-}
-
-.header { 
-  
-  order: 1;
-  width: 100%;
-  height: 10%;
-
-  margin: 0;
-  position:sticky;
-  text-align: center;
-  font-size:larger;
-  color: #ffd900;
-  background-image: url(./images/headeri.svg);
-  font-family:fantasy;
-  box-shadow: #000;
-  
-   }
-.body { 
-  color: white;
-  order: 2;
-  width: 100%;
-        position: relative;
-        font-family:'Segoe UI', 'Roboto', 'Oxygen',
-          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-          sans-serif;
-       
-        text-align: center;
-        font-weight: medium;
-        z-index: 0;
-        
-        }
-
-
-
-
-.contenedor-threejs{
-position: relative;
-align-items: flex-end;
-width: 100%;
-}
-.contenedor-world3d{
-  width: 100%;
-  height: 48vw;
-  border-radius: 15px;
-  overflow:hidden;
-  }
-
-.threejs {
-  position: sticky;
-  height: 48vw;
-  width:100%;
-  overflow:hidden;
   bottom: 0;
-  
-  align-items: center;
-  border-radius: 15px;
-}
-
-.pointer {
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: .5;
-  z-index: 0;
-}
-
-.texture-selector {
-  bottom: 32px;
-  background: #aaa;
-  padding: 8px;
-  border: 3px solid #000;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-}
-
-.texture-selector.hidden {
-  display: none;
-}
-
-.texture-selector img {
-  width: 50px;
-  z-index: 100;
-  image-rendering: pixelated;
-  border: 3px solid #000;
-}
-
-.texture-selector img.selected {
-  border-color: red;
-}
-
-.imagenstyle{
-  z-index: 0;
 }

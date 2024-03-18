@@ -1,0 +1,177 @@
+.header {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: none;
+    
+  }
+  .header h1 {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  .body2 {
+    color: white;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    bottom: 0%;
+    line-height: 100px;
+    padding-top: 0;
+  }
+  hr {
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 50%;
+    margin: 0 auto; /* Centra el hr horizontalmente */
+  }
+  
+  .contenedor-threejs, .threejs {
+    width: 100%;
+    height: 50vw;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .contenedor-Loading {
+    width: 100%;
+    height: 100% !important;
+    border-radius: 15px;
+    overflow: hidden;
+    opacity: 10;
+    transition: opacity 5s ease-in-out;
+  }
+  
+  .Loading {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  .contenedor-Loading.fade-out {
+    opacity: 5;
+    transition: opacity 5s ease-in-out;
+  }
+  
+  .threejs {
+    position: sticky;
+    height: 50vw;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  .pointer {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    z-index: 0;
+  }
+  
+  .texture-selector {
+    bottom: 32px;
+    background: #aaa;
+    padding: 8px;
+    border: 3px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .texture-selector.hidden {
+    display: none;
+  }
+  
+  .texture-selector img {
+    width: 50px;
+    z-index: 100;
+    image-rendering: pixelated;
+    border: 3px solid #000;
+  }
+  
+  .texture-selector img.selected {
+    border-color: red;
+  }
+  
+  .imagenstyle {
+    z-index: 0;
+  }
+  
+  .box {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 250px;
+    align-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .box-1 {
+    width: auto;
+    height: 100%;
+    
+  }
+  
+  .box-2 {
+    width: 401px;
+    height: 100%;
+    
+  }
+  .box-1 img,
+  .box-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* o "contain" según tus necesidades */
+    border-radius: 15px; /* Agrega bordes redondeados si es necesario */
+  }
+  .d-none {
+    display: none;
+  }
+  .footer {
+    width: 100%;
+    height: 35px;
+  
+    color: black; /* Puedes ajustar el color del texto según tus preferencias */
+    text-align:center;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed;
+    line-height: 0px;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .layoutContainerpresentacion {
+    display: flex;
+    position: relative;
+    z-index: 1; /* Asigna el z-index para la sección del HTML */
+    width: 100% ;
+    height: 100%;
+  }
+  .layoutContainer {
+    display:flex;
+    position:absolute;
+    flex-direction: column;
+    z-index: 1; /* Asigna el z-index para la sección del HTML */
+    width: 100% ;
+    height: 100%;
+  }

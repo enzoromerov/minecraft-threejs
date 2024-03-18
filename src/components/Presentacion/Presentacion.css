@@ -1,0 +1,25 @@
+.layoutContainer {
+    position: relative;
+    z-index: 1; /* Asigna el z-index para la sección del HTML */
+    width: 100% ;
+    height: 100vh;
+    display: flex;
+  }
+  .pepe {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 15%; /* Cambiado a left en lugar de translateX */
+    transform: translate(-15%, -50%); /* Ajuste para centrar el elemento */
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: none;
+  }
+  @media (max-width: 768px) {
+    .pepe {
+        font-size: 5vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    }
+}
+  

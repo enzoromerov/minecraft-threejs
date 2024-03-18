@@ -8,4 +8,3 @@ Clon de [Minecraft](https://minecraft.net/) hecho con
   - [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/)
 - [ViteJS](https://vitejs.dev) (Empaquetador)
 
-Basado en el vídeo de [FreecodeCamp](https://youtube.com/watch?v=qpOZup_3P_A&t=0s)
